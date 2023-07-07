@@ -62,8 +62,8 @@ namespace ElevatorTransaction.Controllers
         [HttpPost]
         public async Task<IActionResult> AddTransaction([FromBody] Transaction transactionRequest)
         {
-            transactionRequest.TransactionDateOnly = DateTime.Now.ToShortDateString();
-            transactionRequest.TransactionTimeOnly = DateTime.Now.ToShortTimeString();
+           // transactionRequest.TransactionDateOnly = DateTime.Now.ToShortDateString();
+            //transactionRequest.TransactionTimeOnly = DateTime.Now.ToShortTimeString();
 
             //transactionRequest.DateOnlyValue = DateOnly.FromDateTime(DateTime.Now);
             //transactionRequest.TimeOnlyValue = TimeOnly.FromDateTime(DateTime.Now);
